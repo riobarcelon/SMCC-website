@@ -6,64 +6,121 @@
     <title>Saint Michael College of Caraga</title>
     <link rel="icon" href="smcc-logo.png">
     <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP -->
+     <!-- DUGANGAN KO PA ITO SOON -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <header class="header">
-        <img src="smcc-logo.png" alt="SMCC Logo" class="logo">
-        <h1>Saint Michael College of Caraga</h1>
-        <nav class="nav">
-            <a href="#About">About</a>
-            <a href="#Programs">Programs</a>
-            <a href="#StudentAff&Serv">Student Affairs and Services</a>
-            <a href="#Research">Research & Extension</a>
-            <a href="#Library">Library</a>
-            <a href="#PTA&Alumni">PTA & Alumni</a>
-            <a href="#Administration">Administration</a>
-            <a href="#SchoolCalendar">School Calendar</a>
-            <a href="#News&Updates">News & Updates</a>
-            <a href="#LiteraryWorks">Literary Works</a>
-            <a href="#Contact">Contact</a>
-
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+        <div class="container">
+            <img src="smcc-logo.png" alt="SMCC Logo" class="navbar-brand" style="max-height: 60px;">
+            <h2 class="navbar-brands"></h2>
+            <span class="navbar0-toggle-icon">
+            </span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#StudentAff&Serv">Student Affairs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Library">Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#PTA&Alumni">PTA & Alumni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Administration">Administration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#SchoolCalendar">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#News&Updates">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#LiteraryWorks">Literary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <div class="hero">
-        <div>
-            <h2>Welcome to St. Michael College of Caraga</h2>
-            <p>Providing Quality Education Since 1948</p>
+    <div class="hero bg-light text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Welcome to St. Michael College of Caraga</h2>
+            <p class="lead">Providing Quality Education Since 1948</p>
         </div>
     </div>
 
-    <main class="main">
-        <section class="announcements">
-            <h2>Announcements</h2>
-            <div class="announcement-list">
-                <!-- Mga announcements diri -->
-                <div class="announcement">
-                    <h3>Enrollment Now Open</h3>
-                    <p>Enrollment for Academic Year 2024-2025 is now open!</p>
+    <main class="container py-5">
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Announcements</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Enrollment Now Open</h3><br>
+                            <p class="card-text">Enrollment for Academic Year 2024-2025 is now open!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="programs">
-            <h2>Academic Programs</h2>
-            <div class="program-list">
-                <!-- Mga academic programs diri -->
-                <div class="program">
-                    <h3>College of Education</h3>
-                    <p>Bachelor of Elementary Education</p>
-                    <p>Bachelor of Secondary Education</p>
+        <section>
+            <h2 class="text-center mb-4">Academic Programs</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">COLLEGE</h3><br>
+                            <p class="card-text">Bachelor of Elementary Education</p><hr>
+                            <p class="card-text">Bachelor of Secondary Education</p><hr>
+                            <p class="card-text"> Bachelor of Science Information Technology</p><hr>
+                            <p class="card-text">Bachelor of Science Information Science</p><hr>
+                            <p class="card-text"> Bachelor of Science Computer Science</p>
+                            <label for="button">
+                            <button type="button" class="btn btn-primary mt-3">View More</button>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">SENIOR HIGH SCHOOL</h3><br>
+                            <p class="card-text">Academic Track</p><hr>
+                            <p class="card-text">Technical-Vocational Track</p>
+                            <label for="button">
+                                <button type="button" class="btn btn-primary mt-3">View More</button>
+                                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">BASIC EDUCATION</h3><br>
+                            <p class="card-text">Nursery</p><hr>
+                            <p class="card-text">Kindergarten</p><hr>
+                            <p class="card-text">Elementary</p><hr>
+                            <p class="card-text">Junior High School</p>
+                            <label for="button">
+                                <button type="button" class="btn btn-primary mt-3">View More</button>
+                                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2024 St. Michael College of Caraga. All rights reserved.</p>
-        <p>Nasipit, Agusan del Norte</p>
-    </footer>
 </body>
+<footer class="bg-dark text-light text-center py-3">
+    <p class="mb-1">&copy; 2024 St. Michael College of Caraga. All rights reserved.</p>
+    <p class="mb-0">Nasipit, Agusan del Norte</p>
+</footer>
 </html>

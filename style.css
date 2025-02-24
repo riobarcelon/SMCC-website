@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* beningging of everything */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,43 @@
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header styles */
+main {
+    flex: 1;
+}
+
+.navbar-brands::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1903px;
+    height: 3px;
+    background: #ffd700;
+}
+
+/*.hero::before {
+    content: '';
+    background-image: url(../SMCC-website/smcc-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.35;
+}*/
+
+
+/* Header styles ky gusto nako ng style*/
 .header {
-    background: #003366;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -32,254 +61,144 @@ body {
     height: auto;
 }
 
-/* Navigation */
-.nav {
-    background: #003366;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: flex-end;
-    gap: 0;
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 100;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    font-size: 12.5px;
+.navbar-brand img {
+    transition: transform 0.3s ease;
 }
 
-.nav a:hover {
-    background: #003366;
-    border-radius: 4px;
-    color: gold;
+.navbar-brand img:hover {
+    transform: scale(1.05);
 }
 
-/* Hero Section */
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Hero section para sa div nga naka div hehe*/
 .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
     background-size: cover;
     background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 6rem 2rem;
+    padding: 100px 0;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
     font-weight: 700;
+    color: #1a237e;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+.hero .lead {
+    color: #303f9f;
+    font-size: 1.4rem;
 }
 
-/* Main Content */
-.main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-}
-
-/* Announcements Section */
-.announcements {
-    margin-bottom: 4rem;
-}
-
-.announcements h2 {
-    color: #003366;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #004d99;
-}
-
-.announcement-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.announcement {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Cards styling para nice*/
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    background: linear-gradient(rgb(65, 58, 212), rgba(145, 131, 255, 0.989));
 }
 
-.announcement:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
-.announcement h3 {
-    color: #004d99;
-    margin-bottom: 1rem;
+.card-title {
+    font-weight: 600;
 }
 
-/* Academic Programs Section */
-.program {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.card-body {
+    padding: 2rem;
 }
 
-.program:hover {
-    transform: translateY(-5px);
+.card-text:hover {
+    color: rgba(255, 255, 255, 0.687);
 }
 
-.program h3 {
-    color: #004d99;
-    margin-bottom: 1rem;
+.card-text:active {
+    color: ffd700;
 }
 
-/* Program List */
-.program-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+
+/* Button styling */
+.btn-primary {
+    background-color: #ffd700 !important;
+    border-color: #ffd700 !important;
+    color: #000 !important;
 }
 
-.program {
-    background: #fff;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.btn-primary:hover {
+    background-color: #ffed4a !important;
+    border-color: #ffed4a !important;
 }
 
-.program h3 {
-    color: #004d99;
-    margin-bottom: 1rem;
+/* Section headings */
+section h2 {
+    color: #383838;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
 }
 
-.program p {
-    margin-bottom: 0.5rem;
-}
-
-/* Auth Buttons and Modal */
-.auth-buttons {
+section h2:after {
+    content: '';
     position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-.auth-buttons button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.auth-buttons button:hover {
-    background-color: #45a049;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 5px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: black;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 3px;
+    background: #ffd700;
 }
 
 /* Footer */
-.footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+footer {
+    background: linear-gradient(45deg, #1824a0, #3548c4) !important;
+    margin-top: auto;
 }
 
-/* Responsive Design */
-/* For tablets */
-@media (max-width: 1024px) {
-    .header {
-        padding: 1rem;
-    }
+footer p {
+    font-size: 0.9rem;
+}
 
-    .nav {
-        gap: 0.8rem;
-        font-size: 0.9rem;
-    }
+/*.bg-dark::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1903px;
+    height: 3px;
+    background: #ffd700;
+}*/
 
+/* Responsive adjustments. yes we are*/
+@media (max-width: 768px) {
     .hero {
-        padding: 5rem 2rem;
+        padding: 60px 0;
     }
-
-    .announcement-list,
-    .program-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero .lead {
+        font-size: 1.1rem;
     }
 }
 
-/* For mobile phones */
+/* For mobile phones ky para responsive hehe*/
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -320,7 +239,7 @@ form button:hover {
     }
 }
 
-/* For small mobile devices */
+/* For small mobile devices ky para responsive hehe*/
 @media (max-width: 480px) {
     .header h1 {
         font-size: 1.5rem;
